@@ -1,0 +1,13 @@
+@mixin headingReg {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@mixin headingSm {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+@mixin formLabel {
+  font-size: 14px;
+}

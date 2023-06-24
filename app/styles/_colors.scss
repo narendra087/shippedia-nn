@@ -1,0 +1,13 @@
+$foreground-color: #202124;
+$text-color: #FFFDFA;
+
+$primary-100: #37306B;
+$primary-200: #66347F;
+$primary-300: #9E4784;
+
+$secondary-100: #D27685;
+
+:export {
+  foregroundColor: $foreground-color;
+  textColor: $text-color;
+}
