@@ -1,0 +1,12 @@
+@import '/app/styles/typography';
+
+.input-wrapper {
+  label {
+    @include formLabel;
+    display: block;
+    margin-bottom: .25rem;
+  }
+  input {
+    width: 100%;
+  }
+}

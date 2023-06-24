@@ -1,0 +1,8 @@
+@import '/app/styles/typography';
+@import '/app/styles/colors';
+
+.text-error {
+  @include formLabel;
+  color: $error-status;
+  margin: .25rem 0 0;
+}
