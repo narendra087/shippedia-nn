@@ -1,0 +1,59 @@
+@import '../styles/colors';
+
+.main {
+  min-height: calc(100vh - 80px);
+  padding: 3rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow:
+    rgba($color: $primary-200, $alpha: .4) 0px 2px 4px,
+    rgba($color: $primary-200, $alpha: .3) 0px 7px 13px -3px,
+    rgba($color: $primary-200, $alpha: .2) 0px -3px 0px inset;
+  h2 {
+    margin-bottom: 2rem;
+    span {
+      color: $secondary-100;
+    }
+  }
+  
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.result {
+  margin-top: 3rem;
+  
+  .shipper-wrapper {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $text-color;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .shipper-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    .shipper-card {
+      flex: 50%;
+      width: 50%;
+      padding: .5rem;
+      border: 1px solid $secondary-100;
+      border-radius: .4rem;
+      
+      
+    }
+  }
+}

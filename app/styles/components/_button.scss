@@ -23,6 +23,9 @@
       background: rgba($color: $bg, $alpha: .9);
     }
   }
+  &:disabled {
+    background: rgba($color: $bg, $alpha: .3);
+  }
 }
 
 button {
