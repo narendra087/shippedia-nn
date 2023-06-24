@@ -1,31 +1,19 @@
-import React, { FormEvent, HTMLInputTypeAttribute } from 'react'
+import React, { ChangeEvent, InputHTMLAttributes } from 'react'
 import Error from '../error/Error'
 
 import styles from './Input.module.scss'
 
-interface ComponentProps {
+interface ComponentProps extends InputHTMLAttributes<HTMLInputElement> {
   id: string
-  value: string
-  placeholder: string
-  type: HTMLInputTypeAttribute
   label?: string
-  name?: string
-  disabled?: boolean
-  readOnly?: boolean
-  onChange?: (e: FormEvent<HTMLInputElement>) => void
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void
   status?: 'error' | 'warning' | 'success'
   errMsg?: string
 }
 
 const Input = ({
   id,
-  value,
-  placeholder,
-  name,
   label,
-  type = 'text',
-  disabled,
-  readOnly,
   onChange,
   status,
   errMsg,
@@ -36,13 +24,7 @@ const Input = ({
       {label ? <label htmlFor={id}>{label}</label> : null}
       <input
         id={id}
-        value={value}
-        placeholder={placeholder}
-        name={name}
-        type={type}
         onChange={onChange}
-        readOnly={readOnly}
-        disabled={disabled}
         {...props}
       />
       {errMsg && (

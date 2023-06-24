@@ -28,9 +28,9 @@
 button {
   @extend %button;
   &.primary {
-    @include button($primary-100, $text-color);
+    @include button($primary-100, $foreground-color);
   }
   &.secondary {
-    @include button($secondary-100, $text-color);
+    @include button($secondary-100, $foreground-color);
   }
 }

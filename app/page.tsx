@@ -20,15 +20,15 @@ export default function Home() {
   return (
     
     <main className={styles.main}>
-      <h1>Welcome to <span>Shippedia!</span></h1>
+      {/* <h1>Welcome to <span>Shippedia!</span></h1> */}
       <div className={styles.card}>
-        <p className={styles['card-title']}>Login</p>
+        <p className={styles['card-title']}>Welcome to</p>
+        <h1>Shippedia!</h1>
         <div className={styles.form}>
           <Input
             id='username'
             label='Username'
             placeholder='Input username'
-            type='text'
             value={username}
             onChange={(e) => setUsername(e.currentTarget.value)}
           />

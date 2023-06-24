@@ -8,21 +8,23 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  h1 {
-    span {
-      color: $secondary-100;
-    }
-  }
 }
 
 .card {
-  background: $text-color;
-  color: $foreground-color;
+  background: $foreground-color;
+  box-shadow:
+    rgba($color: $primary-200, $alpha: .4) 0px 2px 4px,
+    rgba($color: $primary-200, $alpha: .3) 0px 7px 13px -3px,
+    rgba($color: $primary-200, $alpha: .2) 0px -3px 0px inset;
   border-radius: .5rem;
   max-width: 400px;
   padding: 1rem;
   width: 100%;
   margin-top: 2rem;
+  
+  h1 {
+    color: $secondary-100;
+  }
   
   .card-title {
     @include headingReg;
