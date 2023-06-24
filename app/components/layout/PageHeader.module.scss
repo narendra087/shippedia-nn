@@ -2,14 +2,14 @@
 @import '../../styles/typography';
 
 .header {
-  background: $primary-200;
+  background: $primary-100;
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 80px;
   width: 100%;
   z-index: 10;
-  padding: 0 3rem;
+  padding: 0 1.25rem;
   position: sticky;
   top: 0;
   

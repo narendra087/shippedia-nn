@@ -36,3 +36,23 @@ input {
   padding: .25rem .75rem;
   border-radius: .375rem;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $foreground-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary-300;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $primary-200;
+}

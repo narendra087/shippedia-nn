@@ -145,7 +145,7 @@ const DashboardPage = () => {
         </div>
       </div>
       
-      { resultData && renderResult() }
+      { resultData.length && renderResult() }
     </main>
   )
 }
